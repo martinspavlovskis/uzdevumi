@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Casting
 {
@@ -17,28 +13,29 @@ namespace Casting
 
         static void first()
         {
-            String a = "1";
-            int b = 2;
-            int c = 3;
-            double d = 4;
-            float e = 5;
+            int a = 1,
+                b = 2,
+                c = 3,
+                d = 4,
+                e = 5;
 
-            //fixme - should be 15 :|
-            //int sum = a + b + c + d + e;
-            //Console.WriteLine(sum);
+            int sum = a + b + c + d + e;
+
+            Console.WriteLine(sum);
         }
 
         static void second()
         {
-            String a = "1";
-            int b = 2;
-            int c = 3;
-            double d = 4.2;
-            float e = 5.3f;
+            float a = 1f,
+                  b = 2f,
+                  c = 3f,
+                  d = 4.2f,
+                  e = 5.3f;
 
-            //fixme - should be 15.5 :| 
-            //float sum = a + b + c + d + e;
-            //Console.WriteLine(sum);
+            float sum = a + b + c + d + e;
+
+            Console.WriteLine(sum);
         }
     }
 }
+
