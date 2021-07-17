@@ -6,31 +6,31 @@ namespace Casting
     {
         static void Main(string[] args)
         {
-            first();
-            second();
+            First();
+            Second();
             Console.ReadKey();
         }
 
-        static void first()
+        static void First()
         {
-            int a = 1,
-                b = 2,
-                c = 3,
-                d = 4,
-                e = 5;
+            int a = 1;
+            int b = 2;
+            int c = 3;
+            int d = 4;
+            int e = 5;
 
             int sum = a + b + c + d + e;
 
             Console.WriteLine(sum);
         }
 
-        static void second()
+        static void Second()
         {
-            float a = 1f,
-                  b = 2f,
-                  c = 3f,
-                  d = 4.2f,
-                  e = 5.3f;
+            float a = 1f;
+            float b = 2f;
+            float c = 3f;
+            float d = 4.2f;
+            float e = 5.3f;
 
             float sum = a + b + c + d + e;
 
