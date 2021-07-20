@@ -10,6 +10,7 @@ namespace TicTacToe
         {
             InitBoard();
             DisplayBoard();
+            string currentPlayer = "X";
         }
 
         private static void InitBoard()
@@ -32,5 +33,7 @@ namespace TicTacToe
             Console.WriteLine("  2  " + board[2, 0] + "|" + board[2, 1] + "|" + board[2, 2]);
             Console.WriteLine("    --+-+--");
         }
+
+
     }
 }

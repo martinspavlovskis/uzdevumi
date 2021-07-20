@@ -10,15 +10,15 @@ namespace Hangman
     {
         static void Main(string[] args)
         {
-            string[] wordList = { "ruby", "python", "java", "javascript" };
+            string[] wordList = { "ruby", "python", "java", "javascript"};
             Random rand = new Random();
             var idx = rand.Next(0, 9);
-            string randomWord = wordList[rand.Next(0, 4)];
+            string randomWord = wordList[rand.Next(0, 10)];
             char[] guess = new char[randomWord.Length];
             List<char> misses = new List<char>();
-            int guessesLeft = 10;
+            int guessesLeft = 10;           
             int counter = 0;
-
+                       
 
             for (int p = 0; p < randomWord.Length; p++)
                 guess[p] = '*';
@@ -29,26 +29,26 @@ namespace Hangman
 
             while (guessesLeft > 0)
             {
-
+                
                 char playerGuess = Convert.ToChar(Console.ReadLine());
                 for (int j = 0; j < randomWord.Length; j++)
                 {
 
-
+                    
                     if (playerGuess == randomWord[j])
                     {
                         guess[j] = playerGuess;
                         counter++;
                     }
-
+                    
                 }
-
+               
                 if (!guess.Contains(playerGuess))
                 {
                     misses.Add(playerGuess);
                     guessesLeft--;
                 }
-
+              
                 Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-");
                 Console.WriteLine();
                 Console.WriteLine(guess);
@@ -67,7 +67,7 @@ namespace Hangman
             }
             Console.WriteLine($"You ran out of guesses. The correct word was: {randomWord}");
             Console.ReadKey();
-
+            
         }
     }
 }
