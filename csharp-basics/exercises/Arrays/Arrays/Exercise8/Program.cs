@@ -10,8 +10,7 @@ namespace Hangman
         static void Main(string[] args)
         {
             string[] wordList = { "ruby", "python", "java", "javascript" };
-            Random rand = new Random();
-            var idx = rand.Next(0, 9);
+            Random rand = new Random();           
             string randomWord = wordList[rand.Next(0, 4)];
             char[] guess = new char[randomWord.Length];
             List<char> misses = new List<char>();
