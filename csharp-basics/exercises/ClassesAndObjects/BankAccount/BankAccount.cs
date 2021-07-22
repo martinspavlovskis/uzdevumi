@@ -19,7 +19,6 @@ namespace BankAccount
         public string ShowUserNameAndBalance()
         {
 
-
             if(_balance > 0)
             {
                 return $"{_name}, ${_balance}";

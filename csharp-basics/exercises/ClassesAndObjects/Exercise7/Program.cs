@@ -15,7 +15,6 @@ namespace Exercise7
             var dog7 = new Dog("Molly", "female");
             var dog8 = new Dog("Coco", "female");
 
-
             dog1.mother = "Lady";
             dog1.father = "Rocky";
 

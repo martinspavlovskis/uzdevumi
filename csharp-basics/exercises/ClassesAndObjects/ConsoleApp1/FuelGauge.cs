@@ -9,7 +9,6 @@
         {
             return _fuelLevel;
         }
-
         public void Fill()
         {
             if(_fuelLevel < 70)

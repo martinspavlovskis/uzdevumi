@@ -11,10 +11,8 @@ namespace Exercise5
         private int Month;
         private int Day;
         private int Year;
-
         public Date(int day, int month, int year)
         {
-
             this.Month = month;
             this.Day = day;
             this.Year = year;

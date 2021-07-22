@@ -14,15 +14,11 @@ namespace EnergyDrinks
 
         private static void Main(string[] args)
         {
-
-            
-
-
+         
              Console.WriteLine("Total number of people surveyed " + NumberedSurveyed);
              Console.WriteLine("Approximately " + CalculateEnergyDrinkers() + " bought at least one energy drink");
              Console.WriteLine(CalculatePreferCitrus() + " of those " + "prefer citrus flavored energy drinks.");
-             
-            
+                        
         }
         
        public static double CalculateEnergyDrinkers()
