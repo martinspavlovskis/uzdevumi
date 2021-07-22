@@ -24,9 +24,14 @@ namespace Exercise4
             this.Studio = studio;
             this.Rating = "PG";
         }
-        public static Movie[] GetPG(Movie[] movies)
-        {          
-          return movies.Where(c => c.Rating == "PG").ToArray();
+        public static Movie[] GetPG(Movie[] mov)
+        {
+            Movie[] pgMov = new Movie[mov.Length];
+
+            pgMov = mov.Where(c => c.Rating == "PG").ToArray();
+            Console.WriteLine(string.Join(",", pgMov.Select(m => m.Title)));
+            return pgMov;
+
         }
     }
 }
