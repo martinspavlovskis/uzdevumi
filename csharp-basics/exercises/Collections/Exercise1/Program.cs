@@ -36,7 +36,19 @@ namespace Exercise1
             }
 
             //todo - replace array with a Dictionary (use brand as key and origination as value) and print out the results
-            
+            var dictionary = new Dictionary<string, string>()
+                {
+                    {"Audi", "Germany"},
+                    {"BMW", "Germany"},
+                    {"Honda", "Japan"},
+                    {"Mercedes", "Germany"},
+                    {"Volkswagen", "Germany"},
+                    {"Tesla", "USA"}
+                };
+            foreach (var x in dictionary)
+            {
+                Console.WriteLine($"{x.Key} => {x.Value}");
+            }
         }
     }
 }
