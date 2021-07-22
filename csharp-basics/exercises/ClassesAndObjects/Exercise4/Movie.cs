@@ -8,9 +8,9 @@ namespace Exercise4
 {
     class Movie
     {
-        private string Title;
-        private string Studio;
-        private string Rating;
+        public string Title;
+        public string Studio;
+        public string Rating;
 
         public Movie(string title, string studio, string rating)
         {

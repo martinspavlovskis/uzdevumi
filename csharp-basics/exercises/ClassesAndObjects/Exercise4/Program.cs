@@ -6,10 +6,16 @@ namespace Exercise4
     {
         static void Main(string[] args)
         {
-            var movie1 = new Movie("Casino Royal", "Eon Productions", "PG13");
-            var movie2 = new Movie("Glass", "Buena Vista International", "PG13");
-            var movie3 = new Movie("Spider-Man: Into the Spider-Verse", "Columbia Pictures", "PG");
-            Movie.GetPG(Movie[]);
+            Movie[] moviesArr ={ 
+                new Movie("Casino Royal", "Eon Productions", "PG13"),
+                new Movie("Glass", "Buena Vista International", "PG13"),
+                new Movie("Spider-Man: Into the Spider-Verse", "Columbia Pictures", "PG") };
+
+            Movie.GetPG(moviesArr);
+            foreach(var movie in movies)
+            {
+                Console.WriteLine(movies.Title);
+            }
         }
     }
 }
