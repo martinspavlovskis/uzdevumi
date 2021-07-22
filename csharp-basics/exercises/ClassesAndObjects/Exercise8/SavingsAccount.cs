@@ -8,11 +8,11 @@ namespace Exercise8
 {
     class SavingsAccount
     {
-        private double _annualInterestRate = 0;
-        private double _balance =0;
-        private double _totalWithdraw =0;
-        private double _totalDeposit = 0;
-        private double _totalInterestEarned = 0;
+        private double _annualInterestRate;
+        private double _balance;
+        private double _totalWithdraw;
+        private double _totalDeposit;
+        private double _totalInterestEarned;
 
         public SavingsAccount(double startingBalance, double annualRate)
         {
@@ -42,17 +42,14 @@ namespace Exercise8
             return this._totalDeposit;
         }
 
-        public void AddInterestMonthly()
+        public double AddInterestMonthly()
         {
             double monthlyInterestEarned = (_annualInterestRate / 12) * this._balance;
             this._balance += monthlyInterestEarned;
             this._totalInterestEarned = this._totalInterestEarned + monthlyInterestEarned;
-            
-        }
-        public double TotalInterest()
-        {
             return this._totalInterestEarned;
-        }
+            
+        }      
 
         public double EndBalance()
         {

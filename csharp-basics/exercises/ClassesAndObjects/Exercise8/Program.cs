@@ -29,7 +29,7 @@ namespace Exercise8
 
             Console.WriteLine($"Total deposited: {myAcc.TotalDeposit()} eur");
             Console.WriteLine($"Total withdrawn: {myAcc.TotalWithdraw()} eur");
-            Console.WriteLine($"Interest earned: {myAcc.TotalInterest()} eur");
+            Console.WriteLine($"Interest earned: {myAcc.AddInterestMonthly()} eur");
             Console.WriteLine($"Ending balance: {myAcc.EndBalance()} eur");
         }
     }
