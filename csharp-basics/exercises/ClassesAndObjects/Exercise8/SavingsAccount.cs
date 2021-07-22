@@ -46,7 +46,7 @@ namespace Exercise8
         {
             double monthlyInterestEarned = (_annualInterestRate / 12) * this._balance;
             this._balance += monthlyInterestEarned;
-            this._totalInterestEarned += monthlyInterestEarned;
+            this._totalInterestEarned = this._totalInterestEarned + monthlyInterestEarned;
             
         }
         public double TotalInterest()
