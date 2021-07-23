@@ -6,16 +6,13 @@ namespace Exercise4
     {
         static void Main(string[] args)
         {
-            char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-
-            
+            char[] vowels = {'a', 'e', 'i', 'o', 'u'};          
             
             for (int i = 0; i < vowels.Length; i++) 
             {
                 Console.WriteLine(vowels[i]);
             }
-            
-            
+                     
             foreach (char vowel in vowels) 
             {
                 Console.WriteLine(vowel);

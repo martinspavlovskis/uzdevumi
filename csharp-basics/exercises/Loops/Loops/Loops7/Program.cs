@@ -10,7 +10,6 @@ namespace Loops7
             bool isPlaying = true;
             int score = 0;
             
-
             Console.WriteLine("Welcome to Piglet!");
 
             while (isPlaying)

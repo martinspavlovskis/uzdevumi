@@ -6,7 +6,6 @@ namespace Exercise2
     {
         static void Main(string[] args)
         {
-
             int result = 1;
             int power;
 
