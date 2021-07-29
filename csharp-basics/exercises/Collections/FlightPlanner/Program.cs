@@ -9,15 +9,25 @@ namespace FlightPlanner
 {
     class Program
     {
-        private const string Path = "../FlightPlanner/flights.txt";
+        
 
         private static void Main(string[] args)
         {
-            var readText = File.ReadAllLines(Path);
+            var readText = File.ReadAllText("flights.txt").Trim().Replace(">", "").Split('-');
+
+            
+            HashSet<string> Cities = new HashSet<string>(readText);
+            var c = new List<string>();
+            
+
             foreach (var s in readText)
             {
+                c.Add(s);
+                
                 Console.WriteLine(s);
             }
+            c.Distinct().ToList();
+            Console.WriteLine(String.Join(",",c));
         }
     }
 }

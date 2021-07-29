@@ -7,20 +7,24 @@ namespace Exercise4
     {
         static void Main(string[] args)
         {
-            static int isHappyNumber(int n)
-            {
-                HashSet<int> st = new HashSet<>();
-                while (1)
-                {
-                    n = numSquareSum(n);
-                    if (n == 1)
-                        return true;
-                    if (st.Contains(n))
-                        return false;
 
-                    st.Add(n);
+            Console.WriteLine("Please enter an integer");
+            string number = Console.ReadLine();
+            int sum = 0;
+
+
+            var array = number.ToCharArray();
+            while (sum < 0)
+            {
+                foreach (var n in array)
+                {
+                    sum += Convert.ToInt32(n.ToString()) * Convert.ToInt32(n.ToString());
                 }
             }
+            Console.WriteLine(sum);
+            
+            
+
 
         }
     }
