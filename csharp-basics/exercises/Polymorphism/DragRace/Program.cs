@@ -6,12 +6,6 @@ namespace DragRace
 {
     class Program
     {
-        /**
- 
- 
- 
- * 6. Print out the car name and speed of the fastest car
- */
 
         private static void Main(string[] args)
         {
