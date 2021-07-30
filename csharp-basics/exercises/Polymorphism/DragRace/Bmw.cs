@@ -2,28 +2,20 @@ using System;
 
 namespace DragRace
 {
-    public class Bmw
+    public class Bmw : Car, ICar, IBoost
     {
-        private int currentSpeed = 0;
 
-        public void SpeedUp() 
+        public override void SpeedUp() 
         {
-            currentSpeed;
+            CurrentSpeed = CurrentSpeed += 14;
         }
-
-        public void SlowDown() 
+        public override void SlowDown()
         {
-            currentSpeed;
+            CurrentSpeed = CurrentSpeed -= 12;
         }
-
-        public string ShowCurrentSpeed() 
+        public void UseNitrousOxideEngine()
         {
-            return currentSpeed.ToString();
-        }
-
-        public void StartEngine() 
-        {
-            Console.WriteLine("Rrrrrrr.....");
+            CurrentSpeed = CurrentSpeed += 40;
         }
     }
 }
