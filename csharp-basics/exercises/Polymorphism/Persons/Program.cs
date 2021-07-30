@@ -6,7 +6,10 @@ namespace Persons
     {
         static void Main(string[] args)
         {
-            Console.Write("dsffds");
+            var student = new Student("Martins", "Pavlovskis", "Brivibas iela", 1, 3.6);
+            var employee = new Employee("Karlis", "Pavlovskis", "Gertrudes iela", 2, "Software Developer");
+            student.Display();
+            employee.Display();
         }
     }
 }
