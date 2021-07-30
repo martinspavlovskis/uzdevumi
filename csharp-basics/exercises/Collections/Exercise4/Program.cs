@@ -7,25 +7,26 @@ namespace Exercise4
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Please enter an integer");
-            string number = Console.ReadLine();
-            int sum = 0;
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(isHappyNumber(num) ? "Happy number" : "Unhappy number");
 
-
-            var array = number.ToCharArray();
-            while (sum < 0)
+             static bool isHappyNumber(int num)
             {
-                foreach (var n in array)
+                var uniqueNum = new HashSet<int>();
+
+                while (uniqueNum.Add(num))
                 {
-                    sum += Convert.ToInt32(n.ToString()) * Convert.ToInt32(n.ToString());
+                    double value = 0;
+                    while (num > 0)
+                    {
+                        value += Math.Pow(num % 10, 2);
+                        num /= 10;
+                    }
+                    num = (int)value;
                 }
+               return num == 1;
             }
-            Console.WriteLine(sum);
-            
-            
-
-
         }
     }
 }
