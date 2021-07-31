@@ -10,6 +10,9 @@ namespace BankAccount
     {
         static void Main(string[] args)
         {
+            var newAcc = new BankAccount("John Doe", 1000.00);
+
+            Console.WriteLine(newAcc.ShowUserNameAndBalance());
         }
     }
 }
