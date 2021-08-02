@@ -7,24 +7,22 @@ namespace PhoneBook
     {
         private SortedDictionary<string, string> _data = new SortedDictionary<string,string>();
        
-
         public PhoneDirectory() 
         {
             _data = new SortedDictionary<string, string>();     
         }
-
         public string Find(string name)
         {          
           if (_data.ContainsValue(name))
             {
                 Console.WriteLine($"{name} has the number: {_data[name]}");
-            } else
+            } 
+            else
             {
                 Console.WriteLine("nothing found");
             }
             return "";                 
         }       
-
         public void PutNumber(string name, string number) 
         {
             if (name == null || number == null) 

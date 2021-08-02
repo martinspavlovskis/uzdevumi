@@ -20,10 +20,12 @@ namespace Histogram
                 if(Convert.ToInt32(readText[i]) <10)
                 {
                     scores[0] += "*";
-                } else if (Convert.ToInt32(readText[i]) > 99)
+                } 
+                else if (Convert.ToInt32(readText[i]) > 99)
                 {
                     scores[10] += "*";
-                } else
+                } 
+                else
                 {
                     scores[Convert.ToInt32(readText[i][0].ToString())] += "*";
                 }

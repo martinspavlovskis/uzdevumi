@@ -9,7 +9,6 @@ namespace Exercise3
     class Program
     {
         private static string nameAdded;
-
         private static void Main(string[] args)
         {
             var mySet = new HashSet<string>();
@@ -25,7 +24,6 @@ namespace Exercise3
             {
                 Console.WriteLine(name);
             }
-
             
         }
     }

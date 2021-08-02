@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace FlightPlanner
 {
     class Program
-    {
-        
+    {     
         private static void Main(string[] args)
         {
             var readText = File.ReadAllLines("flights.txt");
@@ -86,8 +85,8 @@ namespace FlightPlanner
                     break;
                 }
 
-
-            } else if (input != "1")
+            }
+            else if (input != "1")
             {
                 Console.WriteLine("Closing Program.....");            
             }        
