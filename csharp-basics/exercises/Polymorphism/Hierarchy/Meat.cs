@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Hierarchy
 {
-    public class Meat
+    public class Meat : Food
     {
+        public Meat(int quantity)
+            :base(quantity)
+        {
+
+        }
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Hierarchy
 {
-    public class Vegetable : Food
+    public abstract class Feline : Mammal
     {
-        public Vegetable(int quantity)
-            :base(quantity)
+        public Feline(string name, string type, double weight, string livingRegion)
+            :base(name,type,weight,livingRegion)
         {
 
         }
