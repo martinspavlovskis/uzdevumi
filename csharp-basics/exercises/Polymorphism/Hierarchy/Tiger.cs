@@ -18,9 +18,12 @@ namespace Hierarchy
             if(food.GetType().Name != "Meat")
             {
                 Console.WriteLine("Tigers dont eat this");
+            } else
+            {
+                FoodEaten += food.Quantity;
+                MakeSound();
             }
-            FoodEaten += food.Quantity;
-            MakeSound();
+            
         }
 
         public override void MakeSound()

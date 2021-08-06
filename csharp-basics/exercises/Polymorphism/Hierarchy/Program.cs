@@ -46,7 +46,7 @@ namespace Hierarchy
                 {
                     var veg = new Vegetable(Convert.ToInt32(quantity));
                     animalList[animalList.Count - 1].EatFood(veg);
-                }else if(foodType == "End")
+                }else if(foodType == "End" && quantity == " ")
                 {
                     break;
                 }
