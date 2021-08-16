@@ -1,10 +1,15 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DragRace
 {
-    public class Audi : Car, ICar
-    {       
-        public override void SpeedUp() 
+    class Jaguar : Car, ICar
+    {
+ 
+        public override void SpeedUp()
         {
             CurrentSpeed = CurrentSpeed += 9;
         }
