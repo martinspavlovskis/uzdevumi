@@ -18,6 +18,7 @@ namespace SumAverageRunning
 
             Console.WriteLine($"The total sum is: {sum}");
             Console.WriteLine($"The average is: {average}");
+            Console.ReadKey();
         }
     }
 }
