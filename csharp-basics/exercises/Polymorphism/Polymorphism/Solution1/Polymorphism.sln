@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeSounds", "..\..\MakeSou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "..\..\Persons\Persons.csproj", "{26DF00E3-CA2B-4F78-8D19-503C0DF8120B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragRace.Tests", "DragRace.Tests\DragRace.Tests.csproj", "{AEA98195-35D8-4ADE-A942-F575BF2EE688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hierarchy.Tests", "Hierarchy.Tests\Hierarchy.Tests.csproj", "{D0B6AB54-0044-42FB-8447-E8F1FB532BDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{26DF00E3-CA2B-4F78-8D19-503C0DF8120B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DF00E3-CA2B-4F78-8D19-503C0DF8120B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DF00E3-CA2B-4F78-8D19-503C0DF8120B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA98195-35D8-4ADE-A942-F575BF2EE688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA98195-35D8-4ADE-A942-F575BF2EE688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA98195-35D8-4ADE-A942-F575BF2EE688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA98195-35D8-4ADE-A942-F575BF2EE688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B6AB54-0044-42FB-8447-E8F1FB532BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B6AB54-0044-42FB-8447-E8F1FB532BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B6AB54-0044-42FB-8447-E8F1FB532BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B6AB54-0044-42FB-8447-E8F1FB532BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,9 +10,16 @@ namespace Account
     {
         private static void Main(string[] args)
         {
-            var aAccount = new Account("A account", 100.00);
-            var bAccount = new Account("B account",0);
-            var cAccount = new Account("C Account", 0);
+            var MattAccount = new Acc("Matts account", 1000);
+            var MyAccount = new Acc("My account", 0);
+            MattAccount.Withdrawal(100);
+            MyAccount.Deposit(100);
+            Console.WriteLine(MattAccount);
+            Console.WriteLine(MyAccount);
+
+            var aAccount = new Acc("A account", 100.00);
+            var bAccount = new Acc("B account",0);
+            var cAccount = new Acc("C Account", 0);
             Console.WriteLine("Initial state");
             Console.WriteLine(aAccount);
             Console.WriteLine(bAccount);
@@ -29,9 +36,10 @@ namespace Account
             Console.ReadKey();
         }
 
-        public static void Transfer(Account from, Account to, double howMuch)
+        public static void Transfer(Acc from, Acc to, double howMuch)
         {
-            to.Deposit(from.Withdrawal(howMuch));
+            to.Deposit(howMuch);
+            from.Withdrawal(howMuch);
         }
     }
 }

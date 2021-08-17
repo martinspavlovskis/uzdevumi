@@ -21,7 +21,7 @@ namespace Hierarchy
         }
 
 
-        public abstract void MakeSound();
+        public abstract string MakeSound();
         public abstract void EatFood(Food food);
         public abstract void DisplayInfo();
     }

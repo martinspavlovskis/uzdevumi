@@ -5,39 +5,27 @@ namespace PhoneBook
 {
     public class PhoneDirectory
     {
-        private SortedDictionary<string, string> _data = new SortedDictionary<string,string>();
-       
-        public PhoneDirectory() 
+        public SortedDictionary<string, string> _data = new SortedDictionary<string,string>();
+               
+        public string Finder(string name)
         {
-            _data = new SortedDictionary<string, string>();     
-        }
-        public string Find(string name)
-        {          
-          if (_data.ContainsValue(name))
+            try
             {
-                Console.WriteLine($"{name} has the number: {_data[name]}");
-            } 
-            else
-            {
-                Console.WriteLine("nothing found");
+                return _data[name];
             }
-            return "";                 
-        }       
+            catch (KeyNotFoundException)
+            {
+                return $"Name {name} is not found.";
+            }
+            
+        }
         public void PutNumber(string name, string number) 
         {
-            if (name == null || number == null) 
+            if (name == "" || number == "")
             {
-                throw new Exception("name and number cannot be null");
+                throw new ArgumentException("name and/or number cant be null");
             }
-          
-            if (!_data.ContainsKey(name)) 
-            {
-                _data.Add(name,number);
-            }
-            else 
-            {
-                Console.Write("Already saved in contacts");              
-            }
+            _data[name] = number;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hierarchy
 {
-    class Cat : Feline
+    public class Cat : Feline
     {
         public string Breed { get; private set; }
         public Cat(string name, string type, double weight, string livingRegion, string breed)
@@ -20,9 +20,9 @@ namespace Hierarchy
             MakeSound();
         }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("*Cat noises*");
+            return "*Cat noises*";
         }
 
         public override void DisplayInfo()

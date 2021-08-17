@@ -26,9 +26,9 @@ namespace Hierarchy
             MakeSound();
         }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("*Zebra noises*");
+            return "*Zebra noises*";
         }
     }
 }

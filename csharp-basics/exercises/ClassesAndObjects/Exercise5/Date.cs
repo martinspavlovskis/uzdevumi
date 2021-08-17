@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Exercise5
 {
-    class Date
+    public class Date
     {
         private int Month;
         private int Day;
         private int Year;
         public Date(int day, int month, int year)
         {
-            this.Month = month;
-            this.Day = day;
-            this.Year = year;
+            Month = month;
+            Day = day;
+            Year = year;
         }
 
         public void SetMonthDate(int month)
@@ -48,9 +48,9 @@ namespace Exercise5
             return Year;
         }
 
-        public void DisplayDate()
+        public string DisplayDate()
         {
-            Console.WriteLine($"{Day}/{Month}/{Year}");
+            return $"{Day}/{Month}/{Year}";
         }
     }
 }

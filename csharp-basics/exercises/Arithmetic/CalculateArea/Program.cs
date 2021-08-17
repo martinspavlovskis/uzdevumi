@@ -13,24 +13,32 @@ namespace CalculateArea
             int choice; 
 
             do
-            {
-                
+            {              
                 choice = getMenu();
 
                 if (choice == 1)
-                {
-                    Console.WriteLine("You chose 1");
-                    calculateCircleArea();
+                {                  
+                    Console.WriteLine("Please enter the radius");
+                    var radius = Convert.ToDouble(Console.ReadKey());
+                    Console.WriteLine($"The are of the circle is:{Geometry.AreaOfCircle(radius)}");
                     Console.ReadKey();
                 }
-                else if (choice == 1)
+                else if (choice == 2)
                 {
-                    calculateRectangleArea();
+                    Console.WriteLine("Please enter the length");
+                    var length = Convert.ToDouble(Console.ReadKey());
+                    Console.WriteLine("Please enter the width");
+                    var width = Convert.ToDouble(Console.ReadKey());
+                    Console.WriteLine($"The are of the circle is:{Geometry.AreaOfRectangle(length,width)}");
                     Console.ReadKey();
                 }
                 else if (choice == 3)
                 {
-                    calculateTriangleArea();
+                    Console.WriteLine("Please enter the ground");
+                    var ground = Convert.ToDouble(Console.ReadKey());
+                    Console.WriteLine("Please enter the height");
+                    var height = Convert.ToDouble(Console.ReadKey());
+                    Console.WriteLine($"The are of the circle is:{Geometry.AreaOfTriangle(ground, height)}");
                     Console.ReadKey();
                 }
                 else if (choice == 4)
@@ -44,7 +52,6 @@ namespace CalculateArea
 
         public static int getMenu()
         {
-
             int userChoice;
     
             Console.WriteLine("Geometry Calculator\n");
@@ -56,7 +63,6 @@ namespace CalculateArea
             var keyboard = Console.ReadKey();
             
             int.TryParse(keyboard.KeyChar.ToString(), out userChoice);
-
             
             while (userChoice < 1 || userChoice > 4)
             {
@@ -64,64 +70,7 @@ namespace CalculateArea
                 keyboard = Console.ReadKey();
                 userChoice = keyboard.KeyChar;
             }
-
             return userChoice;
-        }
-
-        public static void calculateCircleArea()
-        {
-            decimal radius = 0; 
-
-            Console.WriteLine("What is the circle's radius? ");
-            
-            var keyboard = Console.ReadLine();
-
-            radius = Convert.ToDecimal(Console.ReadLine());
-
-            
-            Console.WriteLine("The circle's area is "
-                    + Geometry.areaOfCircle(radius));
-        }
-
-        public static void calculateRectangleArea()
-        {
-            decimal length = 0;
-            decimal width = 0;
-            
-            var keyboard = Console.ReadKey();
-
-           
-            Console.WriteLine("Enter length? ");
-            length = Convert.ToDecimal(Console.ReadLine());
-
-            
-            Console.WriteLine("Enter width? ");
-            width = Convert.ToDecimal(Console.ReadLine());
-
-
-            Console.WriteLine("The rectangle's area is "
-                    + Geometry.areaOfTriangle(length, width));
-        }
-
-        public static void calculateTriangleArea()
-        {
-            decimal ground = 0;
-            decimal height = 0;
-
-            
-            var keyboard = Console.ReadKey();
-
-            
-            Console.WriteLine("Enter length of the triangle's base? ");
-            ground = Convert.ToDecimal(Console.ReadLine());
-
-            
-            Console.WriteLine("Enter triangle's height? ");
-            height = Convert.ToDecimal(Console.ReadLine());
-
-            
-            Console.WriteLine("The triangle's area is "
-                    + Geometry.areaOfRectangle(ground, height));
         }
     }
 }

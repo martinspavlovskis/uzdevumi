@@ -7,21 +7,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea", "CalculateA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityCalculator", "GravityCalculator\GravityCalculator.csproj", "{21B4C2ED-21D7-4F86-9A72-FCAD10DE578E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{F97626CD-0449-4340-A8D3-9275B8B2ACCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "Exercise1\Exercise1.csproj", "{F97626CD-0449-4340-A8D3-9275B8B2ACCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2", "Exercise2\Exercise2.csproj", "{D8715F93-0220-4AD1-8D60-FCCC9F1803B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise2", "Exercise2\Exercise2.csproj", "{D8715F93-0220-4AD1-8D60-FCCC9F1803B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise4", "Exercise4\Exercise4.csproj", "{C1ABC06A-B18D-4142-8621-BD2964C426DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise4", "Exercise4\Exercise4.csproj", "{C1ABC06A-B18D-4142-8621-BD2964C426DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise5", "Exercise5\Exercise5.csproj", "{ED9E186F-8994-45DC-8F33-489E75A24613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise5", "Exercise5\Exercise5.csproj", "{ED9E186F-8994-45DC-8F33-489E75A24613}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6", "Exercise6\Exercise6.csproj", "{AC27DE1A-3E95-4E03-90CF-2B4B90DBF4DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise6", "Exercise6\Exercise6.csproj", "{AC27DE1A-3E95-4E03-90CF-2B4B90DBF4DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise8", "Exercise8\Exercise8.csproj", "{E932E094-B7DA-401D-9935-2FECA32903C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise8", "Exercise8\Exercise8.csproj", "{E932E094-B7DA-401D-9935-2FECA32903C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise9", "Exercise9\Exercise9.csproj", "{38D963D5-80CB-43C1-B44D-32DC8EDDDA68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise9", "Exercise9\Exercise9.csproj", "{38D963D5-80CB-43C1-B44D-32DC8EDDDA68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumAverageRunning", "SumAverageRunning\SumAverageRunning.csproj", "{53E745D1-EC2C-4367-8EAD-C1F0BC6B4097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumAverageRunning", "SumAverageRunning\SumAverageRunning.csproj", "{53E745D1-EC2C-4367-8EAD-C1F0BC6B4097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1.Tests", "Exercise1.Tests\Exercise1.Tests.csproj", "{70D01524-B083-4153-AE0B-D7E40370DDD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2.Tests", "Exercise2.Tests\Exercise2.Tests.csproj", "{904801B5-76BD-4A7F-9496-56A025697643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6.Tests", "Exercise6.Tests\Exercise6.Tests.csproj", "{1ECC4990-2205-4791-B130-6B44125352EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityCalculator.Tests", "GravityCalculator.Tests\GravityCalculator.Tests.csproj", "{5418FC17-4EEB-489E-8EB5-6F0C785B9B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise8.Tests", "Exercise8.Tests\Exercise8.Tests.csproj", "{8C8BC0F9-5074-44FD-B56D-30F39E4358CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea.Tests", "CalculateArea.Tests\CalculateArea.Tests.csproj", "{42465D8C-4984-4BB8-AEF0-8F19207D5F46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +81,30 @@ Global
 		{53E745D1-EC2C-4367-8EAD-C1F0BC6B4097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53E745D1-EC2C-4367-8EAD-C1F0BC6B4097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53E745D1-EC2C-4367-8EAD-C1F0BC6B4097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D01524-B083-4153-AE0B-D7E40370DDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D01524-B083-4153-AE0B-D7E40370DDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D01524-B083-4153-AE0B-D7E40370DDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D01524-B083-4153-AE0B-D7E40370DDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904801B5-76BD-4A7F-9496-56A025697643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904801B5-76BD-4A7F-9496-56A025697643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904801B5-76BD-4A7F-9496-56A025697643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904801B5-76BD-4A7F-9496-56A025697643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECC4990-2205-4791-B130-6B44125352EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECC4990-2205-4791-B130-6B44125352EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECC4990-2205-4791-B130-6B44125352EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECC4990-2205-4791-B130-6B44125352EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5418FC17-4EEB-489E-8EB5-6F0C785B9B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5418FC17-4EEB-489E-8EB5-6F0C785B9B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5418FC17-4EEB-489E-8EB5-6F0C785B9B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5418FC17-4EEB-489E-8EB5-6F0C785B9B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8BC0F9-5074-44FD-B56D-30F39E4358CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8BC0F9-5074-44FD-B56D-30F39E4358CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8BC0F9-5074-44FD-B56D-30F39E4358CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8BC0F9-5074-44FD-B56D-30F39E4358CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42465D8C-4984-4BB8-AEF0-8F19207D5F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42465D8C-4984-4BB8-AEF0-8F19207D5F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42465D8C-4984-4BB8-AEF0-8F19207D5F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42465D8C-4984-4BB8-AEF0-8F19207D5F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

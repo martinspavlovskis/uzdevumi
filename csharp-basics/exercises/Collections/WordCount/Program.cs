@@ -12,15 +12,11 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
-            var text = File.ReadAllLines("lear.txt");
-
-            int lineCount = text.Count();
-            int wordCount = File.ReadAllText("lear.txt").Replace(",", " ").Replace("'", " ").Split(' ').Length;
-            int charCount = string.Join("", text).ToCharArray().Length;
-
-            Console.WriteLine($"Lines = {lineCount}");
-            Console.WriteLine($"Words = {wordCount}");
-            Console.WriteLine($"Characters = {charCount}");
+            var text = File.ReadAllText("lear.txt");
+        
+            Console.WriteLine($"Lines = {WordCounter.CountLines(text)}");
+            Console.WriteLine($"Words = {WordCounter.CountWords(text)}");
+            Console.WriteLine($"Characters = {WordCounter.CountChars(text)}");
             Console.Read();
         }
     }

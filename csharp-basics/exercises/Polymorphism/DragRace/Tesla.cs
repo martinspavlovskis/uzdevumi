@@ -15,9 +15,9 @@ namespace DragRace
             CurrentSpeed = CurrentSpeed -= 13;
         }
 
-        public override void StartEngine() 
+        public override string StartEngine() 
         {
-            Console.WriteLine("-- silence ---");
+            return "-- silence ---";
         }
     }
 }

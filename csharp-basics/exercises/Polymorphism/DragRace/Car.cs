@@ -29,9 +29,9 @@ namespace DragRace
             return _currentSpeed.ToString();
         }
 
-        public virtual void StartEngine()
+        public virtual string StartEngine()
         {
-            Console.WriteLine("Rrrrrrr.....");
+            return "Rrrrrrr.....";
         }
 
     }

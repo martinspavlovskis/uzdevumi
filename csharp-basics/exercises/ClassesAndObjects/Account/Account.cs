@@ -1,30 +1,36 @@
-﻿namespace Account
+﻿using System;
+
+namespace Account
 {
-    class Account
+    public class Acc
     {
         private string _name;
         private double _money;
 
-        public Account(string name, double money)
+        public Acc(string name, double money)
         {
-            this._name = name;
-            this._money = money;
+            _name = name;
+            _money = money;
         }
 
         public double Withdrawal(double i)
         {
-           this._money = this._money - i;
-           return i;
+            if (i > _money)
+            {
+                throw new ArgumentException("You dont have enough money");
+            }
+            return _money -= i;
+           
         }
 
-        public void Deposit(double i)
+        public double Deposit(double i)
         {
-            this._money = this._money + i;
+            return this._money += i;
         }
 
-        public double Balance()
+        public string Balance()
         {
-            return _money;
+            return ToString();
         }
 
         public override string ToString()
