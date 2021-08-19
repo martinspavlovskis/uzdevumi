@@ -10,6 +10,5 @@ namespace DragRace
     {
         void SpeedUp();
         void SlowDown();
-
     }
 }

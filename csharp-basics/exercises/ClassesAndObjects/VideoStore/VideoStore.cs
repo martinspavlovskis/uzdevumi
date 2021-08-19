@@ -11,7 +11,6 @@ namespace VideoStore
         {
             
         }
-
         public void AddVideo(string title)
         {
             this._videoSelection.Add(new Video(title));

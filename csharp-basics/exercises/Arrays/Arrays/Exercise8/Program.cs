@@ -17,7 +17,6 @@ namespace Hangman
             int guessesLeft = 10;
             int counter = 0;
 
-
             for (int p = 0; p < randomWord.Length; p++)
                 guess[p] = '*';
 
@@ -27,18 +26,14 @@ namespace Hangman
 
             while (guessesLeft > 0)
             {
-
                 char playerGuess = Convert.ToChar(Console.ReadLine());
                 for (int j = 0; j < randomWord.Length; j++)
                 {
-
-
                     if (playerGuess == randomWord[j])
                     {
                         guess[j] = playerGuess;
                         counter++;
                     }
-
                 }
 
                 if (!guess.Contains(playerGuess))
@@ -65,7 +60,6 @@ namespace Hangman
             }
             Console.WriteLine($"You ran out of guesses. The correct word was: {randomWord}");
             Console.ReadKey();
-
         }
     }
 }

@@ -22,7 +22,8 @@ namespace BankAccount
             if(_balance > 0)
             {
                 return $"{_name}, ${_balance}";
-            } else
+            } 
+            else
             {
                 return $"{_name}, -${_balance}";
             }

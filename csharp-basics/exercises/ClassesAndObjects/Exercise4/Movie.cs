@@ -8,30 +8,29 @@ namespace Exercise4
 {
     class Movie
     {
-        public string Title;
-        public string Studio;
-        public string Rating;
+        private string _title;
+        private string _studio;
+        private string _rating;
 
         public Movie(string title, string studio, string rating)
         {
-            this.Title = title;
-            this.Studio = studio;
-            this.Rating = rating;
+            _title = title;
+            _studio = studio;
+            _rating = rating;
         }
         public Movie(string title, string studio)
         {
-            this.Title = title;
-            this.Studio = studio;
-            this.Rating = "PG";
+            _title = title;
+            _studio = studio;
+            _rating = "PG";
         }
         public static Movie[] GetPG(Movie[] mov)
         {
             Movie[] pgMov = new Movie[mov.Length];
 
-            pgMov = mov.Where(c => c.Rating == "PG").ToArray();
-            Console.WriteLine(string.Join(",", pgMov.Select(m => m.Title)));
+            pgMov = mov.Where(c => c._rating == "PG").ToArray();
+            Console.WriteLine(string.Join(",", pgMov.Select(m => m._title)));
             return pgMov;
-
         }
     }
 }

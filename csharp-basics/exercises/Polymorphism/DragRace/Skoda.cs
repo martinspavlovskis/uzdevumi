@@ -8,16 +8,13 @@ namespace DragRace
 {
     class Skoda : Car, ICar
     {
-
         public override void SpeedUp()
         {
             CurrentSpeed = CurrentSpeed += 8;
         }
-
         public override void SlowDown()
         {
             CurrentSpeed = CurrentSpeed -= 6;
         }
-
     }
 }

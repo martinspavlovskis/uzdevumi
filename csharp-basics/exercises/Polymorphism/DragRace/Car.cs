@@ -9,7 +9,6 @@ namespace DragRace
    public class Car
     {
         private int _currentSpeed;
-
         public int CurrentSpeed
         {
             get { return _currentSpeed; }
@@ -19,7 +18,6 @@ namespace DragRace
         {
             CurrentSpeed = CurrentSpeed + 10;
         }
-
         public virtual void SlowDown()
         {
             CurrentSpeed = CurrentSpeed - 5;
@@ -28,11 +26,9 @@ namespace DragRace
         {
             return _currentSpeed.ToString();
         }
-
         public virtual string StartEngine()
         {
             return "Rrrrrrr.....";
         }
-
     }
 }

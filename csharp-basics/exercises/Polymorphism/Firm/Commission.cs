@@ -17,18 +17,16 @@ namespace Firm
             _commisionRate = commisionRate;
         }
 
-        public void addSales(double totalSales)
+        public void AddSales(double totalSales)
         {
             _totalSalesMade += totalSales;
         }
-
         public override double Pay()
         {
             var payment = payRate * _hoursWorked + _totalSalesMade * _commisionRate;
             _totalSalesMade = 0;
             return payment;
         }
-
         public override string ToString()
         {
             var result = base.ToString();

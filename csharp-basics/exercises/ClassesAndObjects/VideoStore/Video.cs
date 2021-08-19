@@ -34,7 +34,8 @@ namespace VideoStore
             if(this._ratingCount > 0)
             {
                 return this._moviesTotalRatingPoints / this._ratingCount;
-            } else
+            } 
+            else
             {
                 return 0.00;
             }
@@ -45,7 +46,8 @@ namespace VideoStore
             if(this._isCheckedOut)
             {
                 return false;
-            } else
+            } 
+            else
             {
                 return true;
             }

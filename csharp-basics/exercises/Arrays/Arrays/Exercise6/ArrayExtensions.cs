@@ -19,7 +19,6 @@ namespace Exercise6
             }
             return arr;
         }
-
         public static int[] MakeNewArray(int[]array)
         {
             var arr2 = new int[10];

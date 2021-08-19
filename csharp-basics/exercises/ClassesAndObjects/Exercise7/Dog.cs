@@ -19,7 +19,7 @@ namespace Exercise7
             this.sex = sex;
         }
 
-      public string FathersName()
+        public string FathersName()
         {
             return father ?? "Unknown";
         }

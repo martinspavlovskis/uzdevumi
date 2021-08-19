@@ -29,7 +29,8 @@ namespace Loops3
             if( ind == -1)
             {
                 Console.WriteLine("This number is not in the array");
-            } else
+            } 
+            else
             {
                 Console.WriteLine($"The index of {wantedNumber} is {ind}");
             }

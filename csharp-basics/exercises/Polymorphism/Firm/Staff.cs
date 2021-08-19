@@ -31,9 +31,9 @@ namespace Firm
             ((Executive) staffList[0]).AwardBonus(500.00);
             ((Hourly) staffList[3]).AddHours(40);
             ((Commission)staffList[6]).AddHours(35);
-            ((Commission)staffList[6]).addSales(400);
+            ((Commission)staffList[6]).AddSales(400);
             ((Commission)staffList[7]).AddHours(40);         
-            ((Commission)staffList[7]).addSales(950);
+            ((Commission)staffList[7]).AddSales(950);
         }
 
         //-----------------------------------------------------------------

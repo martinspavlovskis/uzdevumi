@@ -42,11 +42,13 @@ namespace Hierarchy
                     var meat = new Meat(Convert.ToInt32(quantity));
                     animalList[animalList.Count - 1].EatFood(meat);
                     
-                } else if(foodType == "Vegetable")
+                } 
+                else if(foodType == "Vegetable")
                 {
                     var veg = new Vegetable(Convert.ToInt32(quantity));
                     animalList[animalList.Count - 1].EatFood(veg);
-                }else if(foodType == "End" && quantity == " ")
+                }
+                else if(foodType == "End" && quantity == " ")
                 {
                     break;
                 }

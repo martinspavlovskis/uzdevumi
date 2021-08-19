@@ -6,7 +6,6 @@ namespace DragRace
 {
     class Program
     {
-
         private static void Main(string[] args)
         {
             var cars = new List<Car>() 
@@ -33,7 +32,6 @@ namespace DragRace
 
             int fastestSpeed = cars.Max(c => Convert.ToInt32(c.ShowCurrentSpeed()));
             var finished = cars.OrderBy(c => Convert.ToInt32(c.ShowCurrentSpeed()));
-
             
             Console.WriteLine($"The fastest car was {finished.Last()} with a speed of {fastestSpeed}");
         }

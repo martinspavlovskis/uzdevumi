@@ -8,7 +8,6 @@ namespace DragRace
         {
             CurrentSpeed = CurrentSpeed += 9;
         }
-
         public override void SlowDown()
         {
             CurrentSpeed = CurrentSpeed -= 7;

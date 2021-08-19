@@ -4,7 +4,6 @@ namespace DragRace
 {
     public class Bmw : Car, ICar, IBoost
     {
-
         public override void SpeedUp() 
         {
             CurrentSpeed = CurrentSpeed += 14;
