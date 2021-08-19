@@ -17,7 +17,6 @@ namespace Exercise6
             {
                 arr[i] = rand.Next(101);
             }
-
             return arr;
         }
 
@@ -28,7 +27,6 @@ namespace Exercise6
             {
                 arr2[i] = array[i];
             }
-
             return arr2;
         }
 

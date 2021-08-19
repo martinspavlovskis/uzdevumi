@@ -16,8 +16,7 @@ namespace PhoneBook
             catch (KeyNotFoundException)
             {
                 return $"Name {name} is not found.";
-            }
-            
+            }       
         }
         public void PutNumber(string name, string number) 
         {

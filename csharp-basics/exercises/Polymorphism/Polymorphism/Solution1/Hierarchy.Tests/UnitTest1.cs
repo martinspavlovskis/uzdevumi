@@ -7,7 +7,7 @@ namespace Hierarchy.Tests
     public class UnitTest1
     {
         [Fact]
-        public void CreateNewCat_ReturnsNewCatInstance()
+        public void CreateNewCat_InputData_ReturnsNewCatInstance()
         {
             //Arrange
             var name = "Bille";
@@ -15,6 +15,7 @@ namespace Hierarchy.Tests
             var animalWeight = 4;
             var region = "Riga";
             var breed = "Black Cat";
+
             //Act
             var actual = new Cat("Bille", "Cat", 4, "Riga", "Black Cat");
 
@@ -31,24 +32,24 @@ namespace Hierarchy.Tests
         {
             //Arrange
             var equals = 10;
+
             //Act
             var actual = new Cat("Bille", "Cat", 4, "Riga", "Black Cat");
             var food = new Meat(5);
             actual.EatFood(food);
             actual.EatFood(food);
+
             //Assert
             Assert.Equal(equals, actual.FoodEaten);
-
         }
 
         [Fact]
-        public void MakeSound_InputAnimalData_pipipiExpected()
+        public void MakeSound_InputAnimalData_MouseNoises()
         {
             // Arrange
             var actual = new Mouse("Mouse", "Rat", 0.3, "Cave");
             var expected = "*Mouse noises*";
-            
-            
+                     
             // Assert
             Assert.Equal(expected, actual.MakeSound());
         }

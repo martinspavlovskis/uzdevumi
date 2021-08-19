@@ -14,7 +14,10 @@ namespace Exercise6.Tests
         [InlineData(20, "Woza ")]
         public void CozaLoza_IndexAndValue_ReturnTrue(int num, string value)
         {
+            //Act
             string result = CozaLoza.MakeCoza(num);
+
+            //Assert
             Assert.Equal(value,result);
         }
     }

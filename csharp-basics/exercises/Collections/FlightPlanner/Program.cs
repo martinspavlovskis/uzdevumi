@@ -17,7 +17,6 @@ namespace FlightPlanner
             var flights = GetFlights(readText).ToList();
             Console.WriteLine(MakeTrip(flights, cities,journey));
         }
-
         public static List<KeyValuePair<string,string>> GetFlights(string[]readText)
         {
             List<KeyValuePair<string, string>> flights = new List<KeyValuePair<string, string>>();
@@ -30,7 +29,6 @@ namespace FlightPlanner
             return flights;
         }
         
-
         public static HashSet<string> GetCities(string[]readText)
         {
             var cities = new HashSet<string>();
@@ -41,18 +39,13 @@ namespace FlightPlanner
                 cities.Add(result[0]);
             }            
             return cities;
-
         }
-
-
         public static List<string> ConnectingFlights(List<KeyValuePair<string, string>> flights, List<string> journey)
         {
             Console.Write("### \nPlease write in your selected city:");
             var selectedCity = Console.ReadLine();
             journey.Add(selectedCity);
-            var start = journey[0];
-
-            
+                  
                 foreach (var city in flights)
                 {
                     if (selectedCity == city.Key)
@@ -60,9 +53,7 @@ namespace FlightPlanner
                         Console.WriteLine(city.Value);
                     }
                 }
-                return journey;
-                     
-
+                return journey;                   
         }
 
         public static string MakeTrip(List<KeyValuePair<string, string>> flights, List<string> cities, List<string> journey)
@@ -75,8 +66,7 @@ namespace FlightPlanner
                 Console.Write("CURRENT TRIP:");
                 Console.WriteLine(String.Join("->", journey));
             } while (n<3);
-            return "";
-           
+            return "";      
         }
         public static void PrintCities(List<string>cities)
         {

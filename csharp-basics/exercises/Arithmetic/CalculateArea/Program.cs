@@ -11,7 +11,6 @@ namespace CalculateArea
         static void Main(string[] args)
         {
             int choice; 
-
             do
             {              
                 choice = getMenu();
@@ -49,7 +48,6 @@ namespace CalculateArea
 
             } while (choice != 4);
         }
-
         public static int getMenu()
         {
             int userChoice;

@@ -16,7 +16,6 @@ namespace Arrays6
             Console.WriteLine("{0}", string.Join(", ", arr2));
 
             Console.ReadKey();
-
         }
     }
 }

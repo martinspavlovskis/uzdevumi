@@ -12,8 +12,7 @@ namespace Phonebook
         static void Main(string[] args)
         { 
             var phoneDirectory = new PhoneDirectory();
-            phoneDirectory.PutNumber("john", "123");
-            
+            phoneDirectory.PutNumber("john", "123");          
         }
     }
 }

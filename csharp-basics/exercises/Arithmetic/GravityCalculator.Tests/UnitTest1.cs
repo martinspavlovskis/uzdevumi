@@ -10,9 +10,12 @@ namespace GravityCalculator.Tests
         [InlineData(0, 10, 0, 490.5)]
         [InlineData(0,10,10,500.5)]
         
-        public void CalculateFinalPosition_ReturnFinalPosition(double startPosition, double time, double velocity, double finalPosition)
+        public void CalculateFinalPosition_ValidParams_ReturnFinalPosition(double startPosition, double time, double velocity, double finalPosition)
         {
+            //Act
             var actual = GravityCalculator.CalculateFinalPosition(startPosition, time, velocity);
+
+            //Assert
             Assert.Equal(finalPosition, actual);
         }
     }

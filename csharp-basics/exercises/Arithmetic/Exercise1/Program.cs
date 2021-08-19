@@ -13,7 +13,6 @@ namespace Exercise1
 
             Console.WriteLine(CheckIfFifteen.IsFifteen(num1, num2));
             Console.ReadKey();
-
         }
     }
 }

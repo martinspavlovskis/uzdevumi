@@ -12,11 +12,13 @@ namespace Exercise2.Tests
         [InlineData(10)]
         [InlineData(2)]
         [InlineData(1000)]
-        public void CheckIfOddOrEven_ReturnEvenNumberString(int num)
+        public void CheckIfOddOrEven_Number_ReturnEvenNumberString(int num)
         {
 
+            //Act
             var result = CheckIfOddOrEven.CheckIfEvenOrOdd(num);
 
+            //Assert
             Assert.Equal("Even number", result);
         }
 
@@ -24,11 +26,13 @@ namespace Exercise2.Tests
         [InlineData(15)]
         [InlineData(5)]
         [InlineData(99)]
-        public void CheckIfOddOrEven_ReturnOddNumberString(int num)
+        public void CheckIfOddOrEven_Number_ReturnOddNumberString(int num)
         {
 
+            //Act
             var result = CheckIfOddOrEven.CheckIfEvenOrOdd(num);
 
+            //Assert
             Assert.Equal("Odd number", result);
         }
     }   
