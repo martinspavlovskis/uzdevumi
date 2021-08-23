@@ -10,7 +10,7 @@ namespace Exercise2
     {
         public static string CheckIfEvenOrOdd(int num)
         {
-            return (num % 2 == 0 ? "Even number" : "Odd number");
+            return num % 2 == 0 ? "Even number" : "Odd number";
         }
     }
 }

@@ -25,7 +25,7 @@ namespace BankAccount
             } 
             else
             {
-                return $"{_name}, -${_balance}";
+                return $"{_name}, ${_balance}";
             }
         }
     }

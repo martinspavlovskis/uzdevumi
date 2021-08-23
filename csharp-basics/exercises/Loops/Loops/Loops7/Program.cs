@@ -16,16 +16,16 @@ namespace Loops7
             {
                 int roll = rand.Next(1, 7);
 
-                    if (roll == 1)
-                    {
-                        Console.WriteLine("You rolled a 1! You got 0 points.");
-                        isPlaying = false;
-                        break;
-                    }
-                    score += roll;
-                    Console.WriteLine($"You rolled a {roll}!");
-                    Console.Write("Roll again? (y or n)");
-                    string answer = Console.ReadLine();
+                if (roll == 1)
+                {
+                    Console.WriteLine("You rolled a 1! You got 0 points.");
+                    isPlaying = false;
+                    break;
+                }
+                score += roll;
+                Console.WriteLine($"You rolled a {roll}!");
+                Console.Write("Roll again? (y or n)");
+                string answer = Console.ReadLine();
 
                 if (answer == "n")
                 {

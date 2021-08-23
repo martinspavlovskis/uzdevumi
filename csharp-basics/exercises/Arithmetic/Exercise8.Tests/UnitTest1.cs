@@ -6,7 +6,6 @@ namespace Exercise8.Tests
 {
     public class UnitTest1
     {
-
         [Fact]
         public void CalculateSalary_HourlyWageLowerThanMinimum_ReturnError()
         {

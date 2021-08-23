@@ -11,7 +11,9 @@ namespace Loops6
             for(int i = 1; i <=maxValue; i++)
             {
                 if (i % 15 == 0)
+                {
                     Console.Write("FizzBuzz ");
+                }
                 else if(i % 3 == 0)
                 {
                     Console.Write("Fizz ");

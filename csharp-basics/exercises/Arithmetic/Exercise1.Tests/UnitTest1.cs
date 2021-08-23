@@ -12,7 +12,7 @@ namespace Exercise1.Tests
         [InlineData(17, 50, false)]
         [InlineData(10, 25, true)]
         [InlineData(10, 10, false)]
-        public void CheckIfFifteen_TwoNumbers_ReturnsTrue(int num1, int num2, bool b)
+        public void CheckIfFifteen_TwoNumbers_TwoNumbersIsFifteen(int num1, int num2, bool b)
         {
             //Arrange
             bool a = CheckIfFifteen.IsFifteen(num1, num2);

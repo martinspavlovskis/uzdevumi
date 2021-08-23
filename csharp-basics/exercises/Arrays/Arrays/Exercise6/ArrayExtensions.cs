@@ -19,13 +19,14 @@ namespace Exercise6
             }
             return arr;
         }
-        public static int[] MakeNewArray(int[]array)
+        public static int[] MakeNewArrayFromExistingArray(int[]array)
         {
             var arr2 = new int[10];
             for (var i = 0; i < 10; i++)
             {
                 arr2[i] = array[i];
             }
+            arr2[arr2.Length - 1] = -7;
             return arr2;
         }
 

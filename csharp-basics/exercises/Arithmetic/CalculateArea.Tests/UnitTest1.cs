@@ -14,7 +14,7 @@ namespace CalculateArea.Tests
             double expected = 78.54;
 
             //Act
-            var res = Math.Round(Geometry.AreaOfCircle(radius), 2);
+            var res = Geometry.AreaOfCircle(radius);
 
             //Assert
             Assert.Equal(expected, res);
@@ -29,7 +29,7 @@ namespace CalculateArea.Tests
             double expected = 200;
 
             //Act
-            var res = Math.Round(Geometry.AreaOfRectangle(width, height), 2);
+            var res = Geometry.AreaOfRectangle(width, height);
 
             //Assert
             Assert.Equal(expected, res);
@@ -44,7 +44,7 @@ namespace CalculateArea.Tests
             double expected = 80;
 
             //Act
-            var res = Math.Round(Geometry.AreaOfTriangle(ground, height), 2);
+            var res = Geometry.AreaOfTriangle(ground, height);
 
             //Assert
             Assert.Equal(expected, res);

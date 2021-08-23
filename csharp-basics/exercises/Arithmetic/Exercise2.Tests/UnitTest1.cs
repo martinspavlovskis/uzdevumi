@@ -6,7 +6,6 @@ namespace Exercise2.Tests
 {
     public class UnitTest1
     {
-
         [Theory]
         [InlineData(20)]
         [InlineData(10)]
@@ -14,7 +13,6 @@ namespace Exercise2.Tests
         [InlineData(1000)]
         public void CheckIfOddOrEven_Number_ReturnEvenNumberString(int num)
         {
-
             //Act
             var result = CheckIfOddOrEven.CheckIfEvenOrOdd(num);
 
@@ -24,11 +22,10 @@ namespace Exercise2.Tests
 
         [Theory]
         [InlineData(15)]
-        [InlineData(5)]
+        [InlineData(-5)]
         [InlineData(99)]
         public void CheckIfOddOrEven_Number_ReturnOddNumberString(int num)
         {
-
             //Act
             var result = CheckIfOddOrEven.CheckIfEvenOrOdd(num);
 

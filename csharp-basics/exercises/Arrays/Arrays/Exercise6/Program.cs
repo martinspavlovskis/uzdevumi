@@ -8,10 +8,8 @@ namespace Arrays6
         static void Main(string[] args)
         {
             int[] arr = ArrayExtensions.GenerateRandomNumberArray();
-            int[] arr2 = ArrayExtensions.MakeNewArray(arr);
-           
-            arr[arr.Length - 1] = -7;
-
+            int[] arr2 = ArrayExtensions.MakeNewArrayFromExistingArray(arr);
+        
             Console.WriteLine("{0}", string.Join(", ", arr));
             Console.WriteLine("{0}", string.Join(", ", arr2));
 
